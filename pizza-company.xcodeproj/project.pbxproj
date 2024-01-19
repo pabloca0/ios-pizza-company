@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C15B14062B5B1BCF00D65C95 /* WareHouseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14052B5B1BCF00D65C95 /* WareHouseProtocol.swift */; };
+		C15B14092B5B1C0000D65C95 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14082B5B1C0000D65C95 /* Ingredient.swift */; };
+		C15B140B2B5B1C2D00D65C95 /* WareHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B140A2B5B1C2D00D65C95 /* WareHouse.swift */; };
+		C15B140D2B5B1D0300D65C95 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B140C2B5B1D0300D65C95 /* Stock.swift */; };
 		C1A5C2D92B56E5FA00ABCC51 /* pizza_companyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2D82B56E5FA00ABCC51 /* pizza_companyApp.swift */; };
 		C1A5C2DB2B56E5FA00ABCC51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2DA2B56E5FA00ABCC51 /* ContentView.swift */; };
 		C1A5C2DD2B56E5FA00ABCC51 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2DC2B56E5FA00ABCC51 /* Item.swift */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C15B14052B5B1BCF00D65C95 /* WareHouseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WareHouseProtocol.swift; sourceTree = "<group>"; };
+		C15B14082B5B1C0000D65C95 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		C15B140A2B5B1C2D00D65C95 /* WareHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WareHouse.swift; sourceTree = "<group>"; };
+		C15B140C2B5B1D0300D65C95 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		C1A5C2D52B56E5FA00ABCC51 /* pizza-company.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pizza-company.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A5C2D82B56E5FA00ABCC51 /* pizza_companyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizza_companyApp.swift; sourceTree = "<group>"; };
 		C1A5C2DA2B56E5FA00ABCC51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +42,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C15B14042B5B1BBC00D65C95 /* WareHouse */ = {
+			isa = PBXGroup;
+			children = (
+				C15B14052B5B1BCF00D65C95 /* WareHouseProtocol.swift */,
+				C15B140A2B5B1C2D00D65C95 /* WareHouse.swift */,
+			);
+			path = WareHouse;
+			sourceTree = "<group>";
+		};
+		C15B14072B5B1BF300D65C95 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C15B14082B5B1C0000D65C95 /* Ingredient.swift */,
+				C15B140C2B5B1D0300D65C95 /* Stock.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		C1A5C2CC2B56E5FA00ABCC51 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +79,8 @@
 		C1A5C2D72B56E5FA00ABCC51 /* pizza-company */ = {
 			isa = PBXGroup;
 			children = (
+				C15B14072B5B1BF300D65C95 /* Entities */,
+				C15B14042B5B1BBC00D65C95 /* WareHouse */,
 				C1A5C2D82B56E5FA00ABCC51 /* pizza_companyApp.swift */,
 				C1A5C2DA2B56E5FA00ABCC51 /* ContentView.swift */,
 				C1A5C2DC2B56E5FA00ABCC51 /* Item.swift */,
@@ -142,7 +170,11 @@
 			files = (
 				C1A5C2DB2B56E5FA00ABCC51 /* ContentView.swift in Sources */,
 				C1A5C2DD2B56E5FA00ABCC51 /* Item.swift in Sources */,
+				C15B14092B5B1C0000D65C95 /* Ingredient.swift in Sources */,
+				C15B140D2B5B1D0300D65C95 /* Stock.swift in Sources */,
+				C15B140B2B5B1C2D00D65C95 /* WareHouse.swift in Sources */,
 				C1A5C2D92B56E5FA00ABCC51 /* pizza_companyApp.swift in Sources */,
+				C15B14062B5B1BCF00D65C95 /* WareHouseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
