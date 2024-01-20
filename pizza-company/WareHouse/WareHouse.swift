@@ -7,31 +7,39 @@
 
 import Foundation
 
+enum WareHouseError: Error {
+    case notFound
+    case notEnough
+}
+
 class WareHouse: WareHouseProtocol {
     var stocks: [Stock]
     init(stocks: [Stock]) {
         self.stocks = stocks
     }
 
-    func getIngredient(name: String) -> Ingredient {
-        /*
-        var stock = stocks.firstOrNull { it.ingredient.name == name }
-        if (stock != null) {
-            return stock.ingredient
+    func getIngredient(name: String) throws -> Ingredient {
+        let stock = stocks.first { $0.ingredient.name == name }
+        guard let stock else {
+            throw WareHouseError.notFound
         }
-        throw(NotFoundException(message = "ERROR: El ingrediente no se ha encontrado"))
-         */
-        return nil
+        return stock.ingredient
     }
 
-    func withdraw(ingredient: Ingredient) {
-        /*
-        var stock: Stock = stocks.firstOrNull { it.ingredient.name == ingredient.name }.let { it }
-            ?: throw(NotFoundException(message = "ERROR: El ingrediente no se ha encontrado"))
+    func getStock(for ingredient: Ingredient) throws -> Stock {
+        let stock = stocks.first { $0.ingredient.name == ingredient.name }
+        guard let stock else {
+            throw WareHouseError.notFound
+        }
+        return stock
+    }
+
+    func withdraw(ingredient: Ingredient) throws {
+        let ingredient = try getIngredient(name: ingredient.name)
+        var stock = try getStock(for: ingredient)
         if (stock.quantity - 1 < 0) {
-            throw(NotEnoughException(message = "ERROR: No hay suficiente cantidad de este ingrediente"))
+            throw WareHouseError.notEnough
         }
         stock.quantity -= 1
-         */
     }
 }

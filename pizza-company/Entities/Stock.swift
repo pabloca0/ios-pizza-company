@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Stock {
+class Stock {
     var ingredient: Ingredient
     var quantity: Int
 }
