@@ -11,6 +11,14 @@
 		C15B14092B5B1C0000D65C95 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14082B5B1C0000D65C95 /* Ingredient.swift */; };
 		C15B140B2B5B1C2D00D65C95 /* WareHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B140A2B5B1C2D00D65C95 /* WareHouse.swift */; };
 		C15B140D2B5B1D0300D65C95 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B140C2B5B1D0300D65C95 /* Stock.swift */; };
+		C15B14132B5C4EBA00D65C95 /* ClerkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14122B5C4EBA00D65C95 /* ClerkProtocol.swift */; };
+		C15B14152B5C4EC500D65C95 /* CookerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14142B5C4EC500D65C95 /* CookerProtocol.swift */; };
+		C15B14172B5C4ED300D65C95 /* KitchenAssistantProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14162B5C4ED300D65C95 /* KitchenAssistantProtocol.swift */; };
+		C15B14192B5C4F4300D65C95 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14182B5C4F4300D65C95 /* Pizza.swift */; };
+		C15B141B2B5C4F8300D65C95 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B141A2B5C4F8300D65C95 /* Order.swift */; };
+		C15B141E2B5C50BF00D65C95 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B141D2B5C50BF00D65C95 /* data.swift */; };
+		C15B14202B5C6A6100D65C95 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B141F2B5C6A6100D65C95 /* Client.swift */; };
+		C15B14232B5C6ADC00D65C95 /* ClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14222B5C6ADC00D65C95 /* ClientProtocol.swift */; };
 		C1A5C2D92B56E5FA00ABCC51 /* pizza_companyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2D82B56E5FA00ABCC51 /* pizza_companyApp.swift */; };
 		C1A5C2DB2B56E5FA00ABCC51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2DA2B56E5FA00ABCC51 /* ContentView.swift */; };
 		C1A5C2DD2B56E5FA00ABCC51 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2DC2B56E5FA00ABCC51 /* Item.swift */; };
@@ -23,6 +31,14 @@
 		C15B14082B5B1C0000D65C95 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		C15B140A2B5B1C2D00D65C95 /* WareHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WareHouse.swift; sourceTree = "<group>"; };
 		C15B140C2B5B1D0300D65C95 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		C15B14122B5C4EBA00D65C95 /* ClerkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClerkProtocol.swift; sourceTree = "<group>"; };
+		C15B14142B5C4EC500D65C95 /* CookerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookerProtocol.swift; sourceTree = "<group>"; };
+		C15B14162B5C4ED300D65C95 /* KitchenAssistantProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenAssistantProtocol.swift; sourceTree = "<group>"; };
+		C15B14182B5C4F4300D65C95 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		C15B141A2B5C4F8300D65C95 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		C15B141D2B5C50BF00D65C95 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		C15B141F2B5C6A6100D65C95 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		C15B14222B5C6ADC00D65C95 /* ClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientProtocol.swift; sourceTree = "<group>"; };
 		C1A5C2D52B56E5FA00ABCC51 /* pizza-company.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pizza-company.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A5C2D82B56E5FA00ABCC51 /* pizza_companyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizza_companyApp.swift; sourceTree = "<group>"; };
 		C1A5C2DA2B56E5FA00ABCC51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,10 +70,64 @@
 		C15B14072B5B1BF300D65C95 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				C15B14212B5C6ACF00D65C95 /* Client */,
 				C15B14082B5B1C0000D65C95 /* Ingredient.swift */,
 				C15B140C2B5B1D0300D65C95 /* Stock.swift */,
+				C15B14182B5C4F4300D65C95 /* Pizza.swift */,
+				C15B141A2B5C4F8300D65C95 /* Order.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		C15B140E2B5C4E6200D65C95 /* Roles */ = {
+			isa = PBXGroup;
+			children = (
+				C15B14112B5C4E8300D65C95 /* KitchenAssistant */,
+				C15B14102B5C4E7000D65C95 /* Cooker */,
+				C15B140F2B5C4E6A00D65C95 /* Clerk */,
+			);
+			path = Roles;
+			sourceTree = "<group>";
+		};
+		C15B140F2B5C4E6A00D65C95 /* Clerk */ = {
+			isa = PBXGroup;
+			children = (
+				C15B14122B5C4EBA00D65C95 /* ClerkProtocol.swift */,
+			);
+			path = Clerk;
+			sourceTree = "<group>";
+		};
+		C15B14102B5C4E7000D65C95 /* Cooker */ = {
+			isa = PBXGroup;
+			children = (
+				C15B14142B5C4EC500D65C95 /* CookerProtocol.swift */,
+			);
+			path = Cooker;
+			sourceTree = "<group>";
+		};
+		C15B14112B5C4E8300D65C95 /* KitchenAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				C15B14162B5C4ED300D65C95 /* KitchenAssistantProtocol.swift */,
+			);
+			path = KitchenAssistant;
+			sourceTree = "<group>";
+		};
+		C15B141C2B5C50B200D65C95 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				C15B141D2B5C50BF00D65C95 /* data.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		C15B14212B5C6ACF00D65C95 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				C15B141F2B5C6A6100D65C95 /* Client.swift */,
+				C15B14222B5C6ADC00D65C95 /* ClientProtocol.swift */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 		C1A5C2CC2B56E5FA00ABCC51 = {
@@ -79,6 +149,8 @@
 		C1A5C2D72B56E5FA00ABCC51 /* pizza-company */ = {
 			isa = PBXGroup;
 			children = (
+				C15B141C2B5C50B200D65C95 /* Information */,
+				C15B140E2B5C4E6200D65C95 /* Roles */,
 				C15B14072B5B1BF300D65C95 /* Entities */,
 				C15B14042B5B1BBC00D65C95 /* WareHouse */,
 				C1A5C2D82B56E5FA00ABCC51 /* pizza_companyApp.swift */,
@@ -169,12 +241,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1A5C2DB2B56E5FA00ABCC51 /* ContentView.swift in Sources */,
+				C15B14152B5C4EC500D65C95 /* CookerProtocol.swift in Sources */,
+				C15B14132B5C4EBA00D65C95 /* ClerkProtocol.swift in Sources */,
 				C1A5C2DD2B56E5FA00ABCC51 /* Item.swift in Sources */,
+				C15B14192B5C4F4300D65C95 /* Pizza.swift in Sources */,
 				C15B14092B5B1C0000D65C95 /* Ingredient.swift in Sources */,
+				C15B141B2B5C4F8300D65C95 /* Order.swift in Sources */,
+				C15B14172B5C4ED300D65C95 /* KitchenAssistantProtocol.swift in Sources */,
+				C15B14202B5C6A6100D65C95 /* Client.swift in Sources */,
+				C15B141E2B5C50BF00D65C95 /* data.swift in Sources */,
 				C15B140D2B5B1D0300D65C95 /* Stock.swift in Sources */,
 				C15B140B2B5B1C2D00D65C95 /* WareHouse.swift in Sources */,
 				C1A5C2D92B56E5FA00ABCC51 /* pizza_companyApp.swift in Sources */,
 				C15B14062B5B1BCF00D65C95 /* WareHouseProtocol.swift in Sources */,
+				C15B14232B5C6ADC00D65C95 /* ClientProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
