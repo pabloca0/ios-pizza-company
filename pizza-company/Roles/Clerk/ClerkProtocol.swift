@@ -10,7 +10,7 @@ import Foundation
 enum PaymentStatus {
     case ok
     case notEnough
-    case chane
+    case change
 }
 
 enum OrderStatus {
