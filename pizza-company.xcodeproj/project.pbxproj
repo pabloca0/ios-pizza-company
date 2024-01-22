@@ -19,6 +19,7 @@
 		C15B141E2B5C50BF00D65C95 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B141D2B5C50BF00D65C95 /* data.swift */; };
 		C15B14202B5C6A6100D65C95 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B141F2B5C6A6100D65C95 /* Client.swift */; };
 		C15B14232B5C6ADC00D65C95 /* ClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14222B5C6ADC00D65C95 /* ClientProtocol.swift */; };
+		C15B14262B5D935000D65C95 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14252B5D935000D65C95 /* Restaurant.swift */; };
 		C1A5C2D92B56E5FA00ABCC51 /* pizza_companyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2D82B56E5FA00ABCC51 /* pizza_companyApp.swift */; };
 		C1A5C2DB2B56E5FA00ABCC51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2DA2B56E5FA00ABCC51 /* ContentView.swift */; };
 		C1A5C2DD2B56E5FA00ABCC51 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2DC2B56E5FA00ABCC51 /* Item.swift */; };
@@ -39,6 +40,7 @@
 		C15B141D2B5C50BF00D65C95 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		C15B141F2B5C6A6100D65C95 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		C15B14222B5C6ADC00D65C95 /* ClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientProtocol.swift; sourceTree = "<group>"; };
+		C15B14252B5D935000D65C95 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		C1A5C2D52B56E5FA00ABCC51 /* pizza-company.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pizza-company.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A5C2D82B56E5FA00ABCC51 /* pizza_companyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizza_companyApp.swift; sourceTree = "<group>"; };
 		C1A5C2DA2B56E5FA00ABCC51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,6 +132,14 @@
 			path = Client;
 			sourceTree = "<group>";
 		};
+		C15B14242B5D932800D65C95 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				C15B14252B5D935000D65C95 /* Restaurant.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
 		C1A5C2CC2B56E5FA00ABCC51 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +159,7 @@
 		C1A5C2D72B56E5FA00ABCC51 /* pizza-company */ = {
 			isa = PBXGroup;
 			children = (
+				C15B14242B5D932800D65C95 /* Restaurant */,
 				C15B141C2B5C50B200D65C95 /* Information */,
 				C15B140E2B5C4E6200D65C95 /* Roles */,
 				C15B14072B5B1BF300D65C95 /* Entities */,
@@ -244,6 +255,7 @@
 				C15B14152B5C4EC500D65C95 /* CookerProtocol.swift in Sources */,
 				C15B14132B5C4EBA00D65C95 /* ClerkProtocol.swift in Sources */,
 				C1A5C2DD2B56E5FA00ABCC51 /* Item.swift in Sources */,
+				C15B14262B5D935000D65C95 /* Restaurant.swift in Sources */,
 				C15B14192B5C4F4300D65C95 /* Pizza.swift in Sources */,
 				C15B14092B5B1C0000D65C95 /* Ingredient.swift in Sources */,
 				C15B141B2B5C4F8300D65C95 /* Order.swift in Sources */,

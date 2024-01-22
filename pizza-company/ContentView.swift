@@ -13,6 +13,9 @@ struct ContentView: View {
     @Query private var items: [Item]
 
     var body: some View {
+
+        var wareHouse = WareHouse(stocks: stocks)
+        
         NavigationSplitView {
             List {
                 ForEach(items) { item in
