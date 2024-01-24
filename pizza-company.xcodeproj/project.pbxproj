@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C11E03AA2B615E4B003CDBE9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C11E03A92B615E4B003CDBE9 /* README.md */; };
 		C15B14062B5B1BCF00D65C95 /* WareHouseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14052B5B1BCF00D65C95 /* WareHouseProtocol.swift */; };
 		C15B14092B5B1C0000D65C95 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B14082B5B1C0000D65C95 /* Ingredient.swift */; };
 		C15B140B2B5B1C2D00D65C95 /* WareHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B140A2B5B1C2D00D65C95 /* WareHouse.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C11E03A92B615E4B003CDBE9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C15B14052B5B1BCF00D65C95 /* WareHouseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WareHouseProtocol.swift; sourceTree = "<group>"; };
 		C15B14082B5B1C0000D65C95 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		C15B140A2B5B1C2D00D65C95 /* WareHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WareHouse.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		C1A5C2CC2B56E5FA00ABCC51 = {
 			isa = PBXGroup;
 			children = (
+				C11E03A92B615E4B003CDBE9 /* README.md */,
 				C1A5C2D72B56E5FA00ABCC51 /* pizza-company */,
 				C1A5C2D62B56E5FA00ABCC51 /* Products */,
 			);
@@ -245,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11E03AA2B615E4B003CDBE9 /* README.md in Resources */,
 				C1A5C2E22B56E5FC00ABCC51 /* Preview Assets.xcassets in Resources */,
 				C1A5C2DF2B56E5FC00ABCC51 /* Assets.xcassets in Resources */,
 			);
