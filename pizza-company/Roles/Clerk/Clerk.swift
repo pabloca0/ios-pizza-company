@@ -1,10 +1,3 @@
-//
-//  Clerk.swift
-//  pizza-company
-//
-//  Created by Fernando Salom Carratala on 22/1/24.
-//
-
 import Foundation
 
 class Clerk: ClerkProtocol {

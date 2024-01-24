@@ -1,10 +1,3 @@
-//
-//  pizza_companyApp.swift
-//  pizza-company
-//
-//  Created by Fernando Salom Carratala on 16/1/24.
-//
-
 import SwiftUI
 import SwiftData
 
