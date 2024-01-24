@@ -9,12 +9,12 @@
 Este entrenamiento esta preparado para que practiques tu capacidad de trabajo en equipo y tu compresión
 de los protocolos.
 
-En este caso vamos a trabajar en un restaurante de pizza tenéis que dividiros en grupos de 3 y cada uno
+En este caso vamos a trabajar en un restaurante de pizza (**Francesco's pizza**) tenéis que dividiros en grupos de 3 y cada uno
 de vosotr@s tendréis que desempeñar un rol distinto.
 
 - Dependiente
 - Cocinero
-- Encargado del almacen
+- Asistente de cocina / encargado del almacen
 
 ![Diagrama](README/diagrama.png)
 
@@ -25,11 +25,32 @@ Cada rol tiene una misión única y es absolutamente necesario para poder hacer 
 Tu misión es recibir los pedidos del cliente para darselos al cocinero y gestionar cualquier problema que este pueda tener.
 Además al finalizar deberás calcular el importe del pedido y cobrar al cliente.
 
-### 🧑‍🍳‍ Cociner@
-Tu misión es cocinar todos los productos para ello necesitas ingredientes que tendrá que proporcionarte el encargado de almacen.
-Para cocinar necesitas restar a los ingredientes de la pizza los ingredientes obtenidos del encargado del almacen. Recuerda avisar al dependiente si no puedes cocinar la pizza del cliente
+Interactuas con el cocinero a través de:
 
-### 👷 Encargad@ del almacen
+```swift
+enum FoodStatus {
+    case done
+    case missingIngredients
+}
+
+protocol CookerProtocol {
+    func cook(this pizza: Pizza) -> FoodStatus
+}
+```
+
+### 🧑‍🍳‍ Cociner@
+Tu misión es cocinar todos los productos para ello necesitas ingredientes que tendrá que proporcionarte el asistente de cocins.
+Para cocinar necesitas restar a los ingredientes de la pizza los ingredientes obtenidos del encargado del almacen. Recuerda avisar al dependiente si no puedes cocinar la pizza del cliente.
+
+Interactuas con el asistente de cocina a través de:
+
+```swift
+protocol KitchenAssistantProtocol {
+    func checkWithdrawAndReturn(this ingredient: Ingredient) -> Ingredient?
+}
+```
+
+### 👷 Asistente de cocina
 Tu misión es obtener y manejar el stock del almacen. Los ingredientes no son infinitos recuerdalo. Tu almacen funciona así:
 
 ```swift
@@ -38,36 +59,9 @@ enum WareHouseError: Error {
     case notEnough
 }
 
-class WareHouse: WareHouseProtocol {
-    var stocks: [Stock]
-    init(stocks: [Stock]) {
-        self.stocks = stocks
-    }
-
-    func getIngredient(name: String) throws -> Ingredient {
-        let stock = stocks.first { $0.ingredient.name == name }
-        guard let stock else {
-            throw WareHouseError.notFound
-        }
-        return stock.ingredient
-    }
-
-    func getStock(for ingredient: Ingredient) throws -> Stock {
-        let stock = stocks.first { $0.ingredient.name == ingredient.name }
-        guard let stock else {
-            throw WareHouseError.notFound
-        }
-        return stock
-    }
-
-    func withdraw(ingredient: Ingredient) throws {
-        let ingredient = try getIngredient(name: ingredient.name)
-        var stock = try getStock(for: ingredient)
-        if (stock.quantity - 1 < 0) {
-            throw WareHouseError.notEnough
-        }
-        stock.quantity -= 1
-    }
+protocol WareHouseProtocol {
+    func getIngredient(name: String) throws -> Ingredient
+    func withdraw(ingredient: Ingredient) throws
 }
 ```
 
