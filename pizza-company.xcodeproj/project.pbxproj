@@ -25,7 +25,6 @@
 		C15B142C2B5E6A8600D65C95 /* Clerk.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B142B2B5E6A8600D65C95 /* Clerk.swift */; };
 		C1A5C2D92B56E5FA00ABCC51 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2D82B56E5FA00ABCC51 /* App.swift */; };
 		C1A5C2DB2B56E5FA00ABCC51 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2DA2B56E5FA00ABCC51 /* RestaurantView.swift */; };
-		C1A5C2DD2B56E5FA00ABCC51 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2DC2B56E5FA00ABCC51 /* Item.swift */; };
 		C1A5C2DF2B56E5FC00ABCC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A5C2DE2B56E5FC00ABCC51 /* Assets.xcassets */; };
 		C1A5C2E22B56E5FC00ABCC51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A5C2E12B56E5FC00ABCC51 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -50,7 +49,6 @@
 		C1A5C2D52B56E5FA00ABCC51 /* pizza-company.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pizza-company.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A5C2D82B56E5FA00ABCC51 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		C1A5C2DA2B56E5FA00ABCC51 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
-		C1A5C2DC2B56E5FA00ABCC51 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C1A5C2DE2B56E5FC00ABCC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1A5C2E12B56E5FC00ABCC51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,14 +166,13 @@
 		C1A5C2D72B56E5FA00ABCC51 /* pizza-company */ = {
 			isa = PBXGroup;
 			children = (
-				C15B14242B5D932800D65C95 /* Restaurant */,
-				C15B141C2B5C50B200D65C95 /* Information */,
 				C15B140E2B5C4E6200D65C95 /* Roles */,
 				C15B14072B5B1BF300D65C95 /* Entities */,
 				C15B14042B5B1BBC00D65C95 /* WareHouse */,
+				C15B14242B5D932800D65C95 /* Restaurant */,
+				C15B141C2B5C50B200D65C95 /* Information */,
 				C1A5C2D82B56E5FA00ABCC51 /* App.swift */,
 				C1A5C2DA2B56E5FA00ABCC51 /* RestaurantView.swift */,
-				C1A5C2DC2B56E5FA00ABCC51 /* Item.swift */,
 				C1A5C2DE2B56E5FC00ABCC51 /* Assets.xcassets */,
 				C1A5C2E02B56E5FC00ABCC51 /* Preview Content */,
 			);
@@ -263,7 +260,6 @@
 				C1A5C2DB2B56E5FA00ABCC51 /* RestaurantView.swift in Sources */,
 				C15B14152B5C4EC500D65C95 /* CookerProtocol.swift in Sources */,
 				C15B14132B5C4EBA00D65C95 /* ClerkProtocol.swift in Sources */,
-				C1A5C2DD2B56E5FA00ABCC51 /* Item.swift in Sources */,
 				C15B14262B5D935000D65C95 /* Restaurant.swift in Sources */,
 				C15B14192B5C4F4300D65C95 /* Pizza.swift in Sources */,
 				C15B14282B5E6A7600D65C95 /* KitchenAssistant.swift in Sources */,

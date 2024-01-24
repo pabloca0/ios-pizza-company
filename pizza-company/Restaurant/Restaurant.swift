@@ -28,6 +28,7 @@ class Restaurant {
                 }
             }
     }
+
     private func orderFinished(order: Order, money: Double) {
         print("RESTAURANT", "Dependiente: Pedido terminado, hora de pagar")
         let (status, change) = clerk.chargeWithStatusAndChange(order: order ,payment: money)
