@@ -1,10 +1,3 @@
-//
-//  Restaurant.swift
-//  pizza-company
-//
-//  Created by Fernando Salom Carratala on 21/1/24.
-//
-
 import Foundation
 
 class Restaurant {
