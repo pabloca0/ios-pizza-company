@@ -16,4 +16,9 @@ class Client: ClientProtocol {
     func makeAnOrder() -> Order {
         return order
     }
+
+    func myOrder() -> String {
+        let pizzas = order.pizzas.map({$0.name})
+        return pizzas.joined(separator: ",")
+    }
 }

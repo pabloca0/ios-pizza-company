@@ -2,5 +2,5 @@ import Foundation
 
 struct Order {
     var pizzas: [Pizza] = []
-    var total: Float = 0.0
+    var total: Double = 0.0
 }
