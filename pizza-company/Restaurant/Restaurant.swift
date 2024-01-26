@@ -14,18 +14,18 @@ class Restaurant {
             clerk.order = Order()
             print("---------------------------------")
             print("🧑‍🍳 Dependiente: Hola " + client.name + " que quieres? ")
-            print("🧑‍💼 Cliente: Hola, quiero \(client.order)")
+            print("🧑‍💼 Cliente: Hola, quiero \(client.myOrder())")
             client.order.pizzas.forEach { pizza in
-                var status = clerk.annotate(this: pizza)
+                let status = clerk.annotate(this: pizza)
                 switch status {
                 case .finished:
                     print("🧑‍🍳 Dependiente: Tu [" + pizza.name + "] esta acabada")
-                    orderFinished(money: client.pay())
                 case .noMorePizza:
                     print("🧑‍🍳 Dependiente: no quedan ingredientes para [" + pizza.name + "]")
                     print("🧑‍💼 Cliente: Os odio")
                 }
             }
+            orderFinished(money: client.pay())
         }
     }
 
@@ -33,6 +33,7 @@ class Restaurant {
         if clerk.order.pizzas.count == 0 {
             print("🧑‍🍳 Dependiente: Lo siento no tenemos stock para tu pedido")
             print("🧑‍💼 Cliente: 🤬🤬 LLAMA A FRANCESCO!")
+            return
         }
         print("🧑‍🍳 Dependiente: Pedido terminado, hora de pagar")
         let (status, change) = clerk.chargeWithStatusAndChange(payment: money)
