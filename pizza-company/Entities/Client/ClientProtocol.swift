@@ -1,6 +1,6 @@
 import Foundation
 
-protocol ClientProtocol {
+protocol ClientProtocol {    
     func pay() -> Double
     func makeAnOrder() -> Order
 }
