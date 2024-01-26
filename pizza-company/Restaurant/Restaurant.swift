@@ -10,28 +10,40 @@ class Restaurant {
     }
 
     func open() {
-            clients.forEach { client in
-                print("RESTAURANT", "Cliente \(client.name): Quiero pedir \(client.order)")
-                var status = clerk.receive(order: client.makeAnOrder())
+        clients.forEach { client in
+            clerk.order = Order()
+            print("---------------------------------")
+            print("🧑‍🍳 Dependiente: Hola " + client.name + " que quieres? ")
+            print("🧑‍💼 Cliente: Hola, quiero \(client.order)")
+            client.order.pizzas.forEach { pizza in
+                var status = clerk.annotate(this: pizza)
                 switch status {
                 case .finished:
-                    orderFinished(order: client.makeAnOrder(), money: client.pay())
+                    print("🧑‍🍳 Dependiente: Tu [" + pizza.name + "] esta acabada")
+                    orderFinished(money: client.pay())
                 case .noMorePizza:
-                    print("RESTAURANT", "Cliente: Os odio")
+                    print("🧑‍🍳 Dependiente: no quedan ingredientes para [" + pizza.name + "]")
+                    print("🧑‍💼 Cliente: Os odio")
                 }
             }
+        }
     }
 
-    private func orderFinished(order: Order, money: Double) {
-        print("RESTAURANT", "Dependiente: Pedido terminado, hora de pagar")
-        let (status, change) = clerk.chargeWithStatusAndChange(order: order ,payment: money)
+    private func orderFinished(money: Double) {
+        if clerk.order.pizzas.count == 0 {
+            print("🧑‍🍳 Dependiente: Lo siento no tenemos stock para tu pedido")
+            print("🧑‍💼 Cliente: 🤬🤬 LLAMA A FRANCESCO!")
+        }
+        print("🧑‍🍳 Dependiente: Pedido terminado, hora de pagar")
+        let (status, change) = clerk.chargeWithStatusAndChange(payment: money)
+        print("🧑‍🍳 Dependiente: son \(clerk.order.total)€")
         switch status {
         case .ok:
-            print("RESTAURANT","Dependiente: dinero justo, gracias")
+            print("🧑‍🍳 Dependiente: dinero justo, gracias")
         case .notEnough:
-            print("RESTAURANT","Dependiente: No es suficiente. PAGA!")
+            print("🧑‍🍳 Dependiente: No es suficiente. PAGA!")
         case .change :
-            print("RESTAURANT","Dependiente: Gracias este es tu cambio: \(change)")
+            print("🧑‍🍳 Dependiente: Gracias este es tu cambio: \(change)€")
         }
     }
 }
