@@ -4,16 +4,18 @@ import SwiftData
 struct RestaurantView: View {
 
     var body: some View {
-        var wareHouse = WareHouse(stocks: stocks)
-        var kitchenAssistant = KitchenAssistant(wareHouse: wareHouse)
-        var cooker = Cooker(kitchenAssistant: kitchenAssistant)
-        var clerk = Clerk(cooker: cooker)
-        var restaurant = Restaurant(clients: clients, clerk: clerk)
-        HStack {
-            Text("Francesco`s pizza")
+        let wareHouse = WareHouse(stocks: [])
+        let kitchenAssistant = KitchenAssistantSolution(wareHouse: wareHouse)
+        let cooker = CookerSolution(kitchenAssistant: kitchenAssistant)
+        let clerk = ClerkSolution(cooker: cooker)
+        let restaurant = Restaurant(clients: [], clerk: clerk)
+        ZStack {
+            Image(.background)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
         }.onAppear {
             restaurant.open()
-        }
+        }.ignoresSafeArea()
     }
 }
 
