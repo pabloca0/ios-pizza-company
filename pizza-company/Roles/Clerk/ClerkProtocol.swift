@@ -12,6 +12,7 @@ enum OrderStatus {
 }
 
 protocol ClerkProtocol {
-    func receive(order: Order) -> OrderStatus
-    func chargeWithStatusAndChange(order: Order, payment: Double) -> (PaymentStatus, Double)
+    var order: Order { get set }
+    func annotate(this pizza: Pizza) -> OrderStatus
+    func chargeWithStatusAndChange(payment: Double) -> (PaymentStatus, Double)
 }

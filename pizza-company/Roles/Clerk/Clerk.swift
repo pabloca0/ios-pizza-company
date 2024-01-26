@@ -1,16 +1,18 @@
 import Foundation
 
 class Clerk: ClerkProtocol {
+    var order: Order = Order()
     var cooker: CookerProtocol
 
     init(cooker: CookerProtocol) {
         self.cooker = cooker
     }
 
-    func receive(order: Order) -> OrderStatus {
+    func annotate(this pizza: Pizza) -> OrderStatus {
+
     }
 
-    func chargeWithStatusAndChange(order: Order, payment: Double) -> (PaymentStatus, Double) {
+    func chargeWithStatusAndChange(payment: Double) -> (PaymentStatus, Double) {
 
     }
 }
