@@ -9,8 +9,10 @@ class KitchenAssistant: KitchenAssistantProtocol {
 
     private func search(ingredient: Ingredient) -> Ingredient? {
         //Úsalo si crees que lo necesitas
+        nil
     }
 
     func checkWithdrawAndReturn(this ingredient: Ingredient) -> Ingredient? {
+        nil
     }
 }

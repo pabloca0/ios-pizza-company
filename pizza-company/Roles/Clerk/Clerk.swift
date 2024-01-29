@@ -9,10 +9,10 @@ class Clerk: ClerkProtocol {
     }
 
     func annotate(this pizza: Pizza) -> OrderStatus {
-
+        .finished
     }
 
     func chargeWithStatusAndChange(payment: Double) -> (PaymentStatus, Double) {
-
+        (.ok, 0.0)
     }
 }

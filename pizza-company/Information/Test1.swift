@@ -29,3 +29,8 @@ var barbacoa = Pizza(
     ingredients: [carne, queso, tomate, bacon],
     price: 14.5)
 
+var cuatroQuesos = Pizza(
+    name: "cuatro quesos",
+    ingredients: [queso, queso, queso, queso],
+    price: 13.5)
+
