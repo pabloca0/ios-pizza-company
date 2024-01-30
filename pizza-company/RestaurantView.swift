@@ -4,11 +4,11 @@ import SwiftData
 struct RestaurantView: View {
 
     var body: some View {
-        let wareHouse = WareHouse(stocks: [])
-        let kitchenAssistant = KitchenAssistantSolution(wareHouse: wareHouse)
-        let cooker = CookerSolution(kitchenAssistant: kitchenAssistant)
-        let clerk = ClerkSolution(cooker: cooker)
-        let restaurant = Restaurant(clients: [], clerk: clerk)
+        let wareHouse = WareHouse(stocks: stocks)
+        let kitchenAssistant = KitchenAssistant(wareHouse: wareHouse)
+        let cooker = Cooker(kitchenAssistant: kitchenAssistant)
+        let clerk = Clerk(cooker: cooker)
+        let restaurant = Restaurant(clients: clients, clerk: clerk)
         ZStack {
             Image(.background)
                 .resizable()

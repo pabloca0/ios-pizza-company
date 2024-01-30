@@ -28,6 +28,7 @@
 		C1A5C2DB2B56E5FA00ABCC51 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5C2DA2B56E5FA00ABCC51 /* RestaurantView.swift */; };
 		C1A5C2DF2B56E5FC00ABCC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A5C2DE2B56E5FC00ABCC51 /* Assets.xcassets */; };
 		C1A5C2E22B56E5FC00ABCC51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A5C2E12B56E5FC00ABCC51 /* Preview Assets.xcassets */; };
+		C1F879B72B644D9F00C44E63 /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F879B62B644D9F00C44E63 /* Test2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		C1A5C2DA2B56E5FA00ABCC51 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		C1A5C2DE2B56E5FC00ABCC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1A5C2E12B56E5FC00ABCC51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1F879B62B644D9F00C44E63 /* Test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				C15B141D2B5C50BF00D65C95 /* Test1.swift */,
+				C1F879B62B644D9F00C44E63 /* Test2.swift */,
 			);
 			path = Information;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				C1A5C2DB2B56E5FA00ABCC51 /* RestaurantView.swift in Sources */,
 				C15B14152B5C4EC500D65C95 /* CookerProtocol.swift in Sources */,
+				C1F879B72B644D9F00C44E63 /* Test2.swift in Sources */,
 				C15B14132B5C4EBA00D65C95 /* ClerkProtocol.swift in Sources */,
 				C15B14262B5D935000D65C95 /* Restaurant.swift in Sources */,
 				C15B14192B5C4F4300D65C95 /* Pizza.swift in Sources */,
